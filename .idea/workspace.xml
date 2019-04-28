@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5bbccf4c-fb92-432c-8d54-f7647b9d25d5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Blink.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blink.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/blink.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/jquery.js" afterDir="false" />
-    </list>
+    <list default="true" id="5bbccf4c-fb92-432c-8d54-f7647b9d25d5" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -182,12 +170,12 @@
       <option name="presentableId" value="Default" />
       <updated>1556312786142</updated>
       <workItem from="1556312792207" duration="5535000" />
-      <workItem from="1556489615022" duration="591000" />
+      <workItem from="1556489615022" duration="852000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6126000" />
+    <option name="totallyTimeSpent" value="6387000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1917" y="195" width="1372" height="703" extended-state="6" />
