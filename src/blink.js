@@ -1,3 +1,7 @@
+/**
+ * Author: Michał Stój MIS@N
+ */
+
 class Blink {
     constructor(properties) {
         this.properties = properties;
@@ -11,9 +15,13 @@ class Blink {
         let self = this;
         setInterval(function(){
             let displayBlink = '';
-            let index = self.random(text.length);
+            let id = null;
+            do {
+                id = self.random(text.length);
+            } while (text[id] === ' ');
+
             for (let i in text) {
-                if(i == index && text[i] !== ' ') {
+                if(i == id) {
                     displayBlink += '<span style="color:' + self.properties.blinkColor + '">' + text[i] + '</span>';
                 } else {
                     displayBlink += text[i];

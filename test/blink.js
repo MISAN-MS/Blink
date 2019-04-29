@@ -1,25 +1,22 @@
 $(document).ready(function() {
-    var bP1 = {
+    new Blink({
         class: 'blink-text-h',
         baseColor: '#00f',
         blinkColor: '#f00',
         interval: 5000
-    };
-    new Blink(bP1);
+    });
 
-    var bP2 = {
+    new Blink({
         class: 'blink-text-p',
         baseColor: '#000',
         blinkColor: '#ff0',
         interval: 1000
-    };
-    new Blink(bP2);
+    });
 
-    var bP3 = {
+    new Blink({
         id: 'blink-div',
-        baseColor: '#da0',
-        blinkColor: '#f00',
+        baseColor: '#f0f',
+        blinkColor: '#000',
         interval: 2000
-    };
-    new Blink(bP3);
+    });
 });
