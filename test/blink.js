@@ -10,7 +10,8 @@ $(document).ready(function() {
         class: 'blink-text-p',
         baseColor: '#000',
         blinkColor: '#ff0',
-        interval: 1000
+        interval: 1000,
+        type: 'words'
     });
 
     new Blink({
@@ -19,4 +20,11 @@ $(document).ready(function() {
         blinkColor: '#000',
         interval: 2000
     });
+
+    new Blink({
+        tag: 'span',
+        baseColor: '#000',
+        blinkColor: '#aaa',
+        interval: 2000
+    })
 });

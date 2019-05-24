@@ -3,21 +3,25 @@
  */
 
 class Blink {
+
     constructor(properties) {
         this.properties = properties;
         this.init();
     }
 
     init () {
-        let element = this.properties.id ? $('#' + this.properties.id) : $('.' + this.properties.class);
+        let element = this._selectItem(this.properties);
         element.css('color', this.properties.baseColor ? this.properties.baseColor : '');
         let text = element[0].innerText;
+        if(this.properties.type === 'words') {
+            text = text.split(' ');
+        }
         let self = this;
         setInterval(function(){
             let displayBlink = '';
             let id = null;
             do {
-                id = self.random(text.length);
+                id = self._random(text.length);
             } while (text[id] === ' ');
 
             for (let i in text) {
@@ -26,12 +30,27 @@ class Blink {
                 } else {
                     displayBlink += text[i];
                 }
+                if(self.properties.type === 'words') {
+                    displayBlink += ' ';
+                }
             }
             element[0].innerHTML = displayBlink;
         }, this.properties.interval ? this.properties.interval : 1000);
     };
 
-    random (max) {
+    _random (max) {
         return Math.floor(Math.random()*max);
+    }
+
+    _selectItem(properties) {
+        if(properties.tag && properties.tag !== '' && properties.tag !== ' ') {
+            return $(properties.tag);
+        }
+        if(properties.id && properties.id !== '' && properties.id !== ' ') {
+            return $('#' + properties.id);
+        }
+        if(properties.class && properties.class !== '' && properties.class !== ' ') {
+            return $('.' + properties.class);
+        }
     }
 }
