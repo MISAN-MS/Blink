@@ -11,8 +11,8 @@ class Blink {
 
     init () {
         let element = this._selectItem(this.properties);
-        element.css('color', this.properties.baseColor ? this.properties.baseColor : '');
-        let text = element[0].innerText;
+        element.style.color = this.properties.baseColor ? this.properties.baseColor : '';
+        let text = element.innerText;
         if(this.properties.type === 'words') {
             text = text.split(' ');
         }
@@ -34,7 +34,7 @@ class Blink {
                     displayBlink += ' ';
                 }
             }
-            element[0].innerHTML = displayBlink;
+            element.innerHTML = displayBlink;
         }, this.properties.interval ? this.properties.interval : 1000);
     };
 
@@ -44,13 +44,13 @@ class Blink {
 
     _selectItem(properties) {
         if(properties.tag && properties.tag !== '' && properties.tag !== ' ') {
-            return $(properties.tag);
+            return document.querySelector(properties.tag);
         }
         if(properties.id && properties.id !== '' && properties.id !== ' ') {
-            return $('#' + properties.id);
+            return document.getElementById(properties.id);
         }
         if(properties.class && properties.class !== '' && properties.class !== ' ') {
-            return $('.' + properties.class);
+            return document.querySelector('.' + properties.class);
         }
     }
 }

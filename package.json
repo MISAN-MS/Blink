@@ -1,6 +1,6 @@
 {
   "name": "misan.blink",
-  "version": "0.1.1",
+  "version": "0.3.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,6 @@
   "author": "Michał Stój MIS@N",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^3.4.1",
     "required": "^1.0.0"
   }
 }

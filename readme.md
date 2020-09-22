@@ -50,6 +50,7 @@ new Blink({
 - `type` - can be use to change blinked letters to single words - default `letters`, can take `words`, `letters`
 
 ## Change log
+- 23/09/2020 - remove jquery from dependencies
 - 24/05/2019 
   - add html tags to select
   - add property `type` to change blinked letters to blinked words
